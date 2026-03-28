@@ -17,6 +17,7 @@ Business impact of problem:
 Revenue leakage due to fraud (~1–3%)
 Slow decision-making
 Regulatory compliance risks
+
 2. Objective
 
 Build a scalable analytics platform that:
@@ -25,6 +26,7 @@ Processes transaction data in real-time
 Detects anomalies and fraud patterns
 Provides dashboards for decision-making
 Supports regulatory reporting
+
 3. Solution Architecture
 
 System Design (3-tier architecture):
@@ -36,20 +38,23 @@ Backend API (Node.js / Express)
 Data Layer (PostgreSQL + Redis + Data Pipeline)
         ↓
 ML Layer (Python Fraud Detection Models)
+
 4. Key Features
 Real-time transaction ingestion
 Fraud detection (ML-based anomaly detection)
 Customer segmentation analytics
 Financial KPI dashboards
 Automated reporting system
-5. Tech Stack
+
+6. Tech Stack
 Frontend: React, Chart.js
 Backend: Node.js, Express
 Database: PostgreSQL, Redis
 Data Pipeline: Python (Pandas, Airflow)
 ML: Scikit-learn (Isolation Forest)
 DevOps: Docker
-6. Repository Structure
+
+8. Repository Structure
 fintech-analytics-platform/
 │
 ├── frontend/
@@ -97,16 +102,19 @@ fintech-analytics-platform/
 │
 └── docker/
     └── docker-compose.yml
-7. Results (CRITICAL SECTION)
+
+9. Results 
 Reduced fraud detection latency from 24 hours → < 5 seconds
 Achieved 92% precision in anomaly detection
 Reduced manual reporting workload by 80%
 Improved operational efficiency in banking workflows
-8. Business Impact
+
+10. Business Impact
 Estimated $1.2M annual fraud prevention savings
 Faster compliance reporting (real-time vs manual)
 Better customer trust and retention
-9. Engineering Depth
+
+11. Engineering Depth
 Designed microservice-style backend architecture
 Implemented asynchronous data pipelines
 Integrated ML model into production API
